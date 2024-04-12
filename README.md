@@ -1,4 +1,5 @@
-![Presentación Proyecto Globalización Económica Profesional Naranja (1)](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/68043a80-822c-4020-88c6-dd12aa9ff85f)
+![Presentación Proyecto Globalización Económica Profesional Naranja (2)](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/267b38be-b985-479f-8ba7-c9f9b31387c0)
+
 
 # CALCULAR COSTO DE PRODUCTO - PROYECTO1M1
 

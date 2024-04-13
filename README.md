@@ -18,72 +18,62 @@ Leer el precio original del producto.
 - Mostrar el costo final del producto, desglosando los diferentes componentes (descuentos, impuestos, descuento por cantidad y costo de envío).
 
 ### 1. PASO A PASO:
-- 1: Declaración de Variables: Se definen las variables necesarias para el cálculo, como el precio original del producto, el descuento, los impuestos, el peso del paquete y la cantidad de productos comprados.
+- 1: Declaración de arreglos:
+
+Aquí se declaran arreglos para almacenar los precios originales, pesos del paquete, precios con descuento, precios con impuestos y precios con descuento por cantidad de cada producto.
   
 ```scss
-Definir precioOriginal, descuento, impuestos, pesoPaquete Como Real
-Definir cantidadProductos Como Entero
-Definir costoEnvio, costoTotal, precioConDescuento, precioConImpuestos, precioConDescuentoCantidad Como Real
+Definir preciosOriginales, pesosPaquete, preciosConDescuento, preciosConImpuestos, preciosConDescuentoCantidad Como Arreglo de Reales
+```
+- 2: Lectura de detalles de cada producto usando un bucle Para:
 
-- 2: Definición de Valores Estáticos: Se asignan valores estáticos para los impuestos, el descuento y el costo de envío.
+Este bucle se utiliza para solicitar al usuario los precios originales y los pesos del paquete para cada producto, almacenándolos en los arreglos correspondientes.
   
 ```scss
-impuestos = 12 // 12% de impuestos
-descuento = 10 // 10% de descuento por cupón
-costoEnvio = 10 // Costo fijo de envío
-descuentoCantidad = 5 // 5% de descuento por cantidad adicional
+Para i = 1 Hasta cantidadProductos Hacer
+    Escribir "Ingrese el precio original del producto ", i, ":"
+    Leer preciosOriginales[i]
+    
+    Escribir "Ingrese el peso del paquete del producto ", i, " (en kg):"
+    Leer pesosPaquete[i]
+FinPara
 ```
-- 3: Entrada de Datos: El usuario ingresa el precio original del producto, la cantidad de productos comprados y el peso del paquete.
+- 3: Cálculo y muestra de costos para cada producto usando un bucle Para:
+
+Este bucle se utiliza para calcular y mostrar los costos finales para cada producto, utilizando los arreglos que contienen los precios originales, precios con descuento, precios con impuestos y precios con descuento por cantidad.
 
 ```scss
-Escribir "Ingrese el precio original del producto:"
-Leer precioOriginal
-Escribir "Ingrese la cantidad de productos comprados:"
-Leer cantidadProductos
-Escribir "Ingrese el peso del paquete (en kg):"
-Leer pesoPaquete
+Para i = 1 Hasta cantidadProductos Hacer
+    preciosConDescuento[i] <- preciosOriginales[i] * (1 - (descuento / 100))
+    preciosConImpuestos[i] <- preciosConDescuento[i] * (1 + (impuestos / 100))
+    
+    Si cantidadProductos > 1 Entonces
+        preciosConDescuentoCantidad[i] <- preciosConImpuestos[i] * (1 - (descuentoCantidad / 100))
+    Sino
+        preciosConDescuentoCantidad[i] <- preciosConImpuestos[i]
+    FinSi
+    
+    costoTotal <- costoTotal + (preciosConDescuentoCantidad[i] + costoEnvio)
+    
+    Escribir "Costo final del producto ", i, ":"
+    Escribir "Precio con descuento aplicado:", preciosConDescuento[i]
+    Escribir "Precio con impuestos:", preciosConImpuestos[i]
+    Escribir "Precio con descuento por cantidad:", preciosConDescuentoCantidad[i]
+    Escribir "Costo de envío:", costoEnvio
+    Escribir "Costo total:", preciosConDescuentoCantidad[i] + costoEnvio
+FinPara
 ```
-- 4: Cálculo del Precio con Descuento: Se calcula el precio del producto con el descuento aplicado.
+Con esta explicación, puedes comprender cómo se utilizan los bucles y los arreglos en el algoritmo para calcular el costo de los productos.
 
-```scss
-precioConDescuento = precioOriginal * (1 - (descuento / 100))
-```
-
-- 5: Aplicación de Impuestos: Se calcula el precio del producto después de aplicarle los impuestos.
-
- ```scss
- precioConImpuestos = precioConDescuento * (1 + (impuestos / 100))
- ```
-- 6: Aplicación del Descuento por Cantidad: Se verifica si se compraron más de un producto y, en caso afirmativo, se aplica un descuento adicional por cantidad.
-
-```scss
-Si cantidadProductos > 1 Entonces
-    precioConDescuentoCantidad = precioConImpuestos * (1 - (descuentoCantidad / 100))
-Sino
-    precioConDescuentoCantidad = precioConImpuestos
-FinSi
-```
-
-- 7: Cálculo del Costo Total: Se calcula el costo total sumando el precio del producto con el descuento y los impuestos, multiplicado por la cantidad de productos, más el costo de envío.
-```scss
-costoTotal = (precioConDescuentoCantidad * cantidadProductos) + costoEnvio
-```
-
-- 8: Salida de Resultados: Se muestran en pantalla los diferentes componentes del costo final del producto, incluyendo el precio con descuento, el precio con impuestos, el precio con descuento por cantidad, el costo de envío y el costo total.
-```scss
-Escribir "Costo final del producto:"
-Escribir "Precio con descuento aplicado:", precioConDescuento
-Escribir "Precio con impuestos:", precioConImpuestos
-Escribir "Precio con descuento por cantidad:", precioConDescuentoCantidad
-Escribir "Costo de envío:", costoEnvio
-Escribir "Costo total:", costoTotal
-```
 ### DIAGRAMA DE FLUJO:
 
-![final proyceto 1m1 mejorado 12-04-24SS](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/997f0f6b-605b-4686-bc34-3366a0647d8f)
+![final, con arreglos, ya en el repositorio](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/9c1b5aa7-9ba4-4bc6-871c-4be930c86ce1)
+
+
 
 ### EJECUTANDO PROCESO:
 
-![EJECUCION](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/0c4ef92c-bf7a-4e78-a06e-9993c4dbaaf8)
+![Captura ultima 12-04-2024----](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/621cef86-137d-45bc-8127-c5ddb56a2a46)
 
-
+# ¡MUCHAS GRACIAS!
+![Presentación Proyecto Globalización Económica Profesional Naranja (3)](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/d899f948-93cf-40e0-a266-986053ed1b4e)

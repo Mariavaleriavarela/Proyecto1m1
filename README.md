@@ -75,5 +75,3 @@ Con esta explicación, puedes comprender cómo se utilizan los bucles y los arre
 
 ![Captura ultima 12-04-2024----](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/621cef86-137d-45bc-8127-c5ddb56a2a46)
 
-# ¡MUCHAS GRACIAS!
-![Presentación Proyecto Globalización Económica Profesional Naranja (3)](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/d899f948-93cf-40e0-a266-986053ed1b4e)

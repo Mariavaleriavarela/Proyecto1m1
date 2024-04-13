@@ -6,7 +6,7 @@
 
 Este proyecto tiene como objetivo desarrollar un algoritmo en pseudocódigo para calcular el costo de un producto con base en ciertos criterios específicos. A continuación, se detallan los pasos a seguir para comprender y ejecutar el algoritmo:
 
-## PLANTEAMIENTO:
+## EJERCICIO:
 Construir un algoritmo en pseudocódigo que simule un sistema para calcular el costo de un producto con base en su precio original y el porcentaje de descuento aplicado. El algoritmo debia cumplir con los siguientes requisitos:
 
 Leer el precio original del producto.

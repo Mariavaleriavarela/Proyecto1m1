@@ -4,10 +4,10 @@
 # CALCULAR COSTO DE PRODUCTO - PROYECTO1M1
 
 
-Este proyecto tiene como objetivo desarrollar un algoritmo en pseudocódigo para calcular el costo de un producto con base en ciertos criterios específicos. A continuación, se detallan los pasos a seguir para comprender y ejecutar el algoritmo:
+Hola!! Bienvenidos a este proyecto que tiene como objetivo desarrollar un algoritmo en pseudocódigo para calcular el costo de un producto con base en ciertos criterios específicos. A continuación, se detallan los pasos a seguir para comprender y ejecutar el algoritmo:
 
 ## EJERCICIO:
-Construir un algoritmo en pseudocódigo que simule un sistema para calcular el costo de un producto con base en su precio original y el porcentaje de descuento aplicado. El algoritmo debia cumplir con los siguientes requisitos:
+Teníamos que construir un algoritmo en pseudocódigo que simule un sistema para calcular el costo de un producto con base en su precio original y el porcentaje de descuento aplicado. El algoritmo debia cumplir con los siguientes requisitos:
 
 Leer el precio original del producto.
 - Aplicar un descuento al producto si es aplicable (por ejemplo, si el cliente tiene un cupón de descuento).
@@ -67,11 +67,16 @@ Con esta explicación, puedes comprender cómo se utilizan los bucles y los arre
 
 ### DIAGRAMA DE FLUJO:
 
+Quise mostrarles el diagrama de flujo de mi código, ya que como fue una de las primeras clases, sentí que debía agregarlo en el proyecto.
+
 ![final, con arreglos, ya en el repositorio](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/9c1b5aa7-9ba4-4bc6-871c-4be930c86ce1)
 
 
 
 ### EJECUTANDO PROCESO:
 
+También, les muestro una captura de lo que es la ejecución del código en Pseint, y mostrando que el resultado es lo que se pidió en el ejercicio.
+
 ![Captura ultima 12-04-2024----](https://github.com/Mariavaleriavarela/Proyecto1m1/assets/162743143/621cef86-137d-45bc-8127-c5ddb56a2a46)
 
+## Muchas gracias!!

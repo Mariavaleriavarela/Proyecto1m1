@@ -4,7 +4,7 @@
 # CALCULAR COSTO DE PRODUCTO - PROYECTO1M1
 
 
-Hola!! Bienvenidos a este proyecto que tiene como objetivo desarrollar un algoritmo en pseudocódigo para calcular el costo de un producto con base en ciertos criterios específicos. A continuación, se detallan los pasos a seguir para comprender y ejecutar el algoritmo:
+Hola!! Bienvenidos a este proyecto que tiene como objetivo desarrollar un algoritmo en pseudocódigo para calcular el costo de un producto con base en ciertos criterios específicos, a continuación, se detallan los pasos a seguir para comprender y ejecutar el algoritmo:
 
 ## EJERCICIO:
 Teníamos que construir un algoritmo en pseudocódigo que simule un sistema para calcular el costo de un producto con base en su precio original y el porcentaje de descuento aplicado. El algoritmo debia cumplir con los siguientes requisitos:
